@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Portfolio</title>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav>
+    <div class="left">
+      <a href="#">Vinuk Ranaweera</a>
+    </div>
+
+    <div class="right">
+      <a href="#about">
+        <i class="fa-solid fa-user"></i>
+        <span>About</span>
+      </a>
+
+      <a href="#experience">
+        <i class="fa-solid fa-briefcase"></i>
+        <span>Experience</span>
+      </a>
+
+      <a href="#skills">
+        <i class="fa-solid fa-code"></i>
+        <span>Skills</span>
+      </a>
+
+      <a href="#projects">
+        <i class="fa-solid fa-folder-open"></i>
+        <span>Projects</span>
+      </a>
+      
+      <a href="#contact">
+        <i class="fa-solid fa-envelope"></i>
+        <span>Contact</span>
+      </a>
+    </div>
+      
+    <div class="hamburger-icon" onclick="toggleMobileMenu(this)">
+        <!-- <span></span>
+        <span></span>
+        <span></span> -->
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <ul class="menu-links">
+          <li>
+            <a href="#about">
+            <i class="fa-solid fa-user"></i>
+            <span>About</span>
+            </a>
+          </li>
+          <li>
+            <a href="#experience">
+            <i class="fa-solid fa-briefcase"></i>
+            <span>Experience</span>
+            </a>
+          </li>
+          <li>
+            <a href="#skills">
+            <i class="fa-solid fa-code"></i>
+            <span>Skills</span>
+            </a>
+          </li>
+          <li>
+            <a href="#projects">
+              <i class="fa-solid fa-folder-open"></i>
+              <span>Projects</span>
+            </a>
+          </li>
+          <li>
+            <a href="#contact">
+              <i class="fa-solid fa-envelope"></i>
+              <span>Contact</span>
+            </a>
+          </li>
+        </ul>
+    </div>
+  </nav>
+
+  <main>
+    <!-- SECTION 1: Hero -->
+    <section class="hero-section">
+      <div class="text">
+        <h2>Hi, I'm Vinuk Ranaweera! 👋</h2>
+        <h3>Your Friendly, Neighborhood</h3>
+        <div class="typewriter"><span id="text"></span><span class="cursor">|</span></div>
+
+        <div class="topBlur2"></div>
+        <div class="links">
+          <a href="assets/Vinuk_Resume.pdf" target="_blank" rel="noopener noreferrer">
+            <i class="fa-solid fa-file"></i>
+            <span>View Resume</span>
+          </a>
+          
+          <a href="https://www.linkedin.com/in/vinuk-ranaweera-3662a918b/" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-linkedin"></i>
+            <span>Linkedin</span>
+          </a>
+          
+          <a href="#contact">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Contact Me</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="headshot">
+        <img src="assets/hero-headshot.png" alt="headshot">
+        <div class="topBlur1">
+      </div>
+    </section>
+
+    <!-- SECTION 2: About Me -->
+    <section id="about" class="about">
+      <h2>About Me</h2>
+      <div class="about-section">
+        <div class="about-container">
+            <div class="bio">
+                <p>Hello! I'm <strong>Vinuk Ranaweera</strong>. 
+                  My areas of expertise include data science, data analytics, web development, software design, and game design. 
+                  During my free time, I enjoy playing chess and basketball as well as exploring new coding languages and frameworks. 
+                  I am always eager to share my experience and connect with fellow enthusiasts, professionals, and anyone interested in the exciting world of computer science. 
+                  Feel free to check out my projects in the Projects section or connect with me on LinkedIn!</p>
+            </div>
+        </div>
+    
+        <div class="details">
+            <div class="education">
+                <h3><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+                <p><strong>Bachelor's Degree in Computer Science</strong><br>Grove School of Engineering, The City College of New York (CUNY), Dec 2023</p>
+                <ul>
+                  <li><strong>Honors</strong>: Cum Laude, Dean's List Academic Achievement Award</li>
+                  <li><strong>Coursework</strong>: Data Structures, Algorithms, Software Design, Assembly Programming, Discrete Math, Probability Theory,
+                    Numerical Analysis in Programming, Modeling Complex Systems, Data Analysis, Data Science, Machine Learning</li>
+                </ul>
+            </div>
+    
+            <div class="certifications">
+                <h3><i class="fa-solid fa-certificate"></i> Certifications</h3>
+                <ul>
+                  <p><strong>MIT Professional Education</strong></p>
+                  <li>Applied Data Science Program: Leveraging AI for Effective Decision-Making, 2024</li>
+                  <p><strong>Coursera</strong></p>
+                  <li>Google Data Analytics Professional Certificate, 2023</li>
+                  <li>Java Programming: Arrays, Lists, and Structured Data, 2019</li>
+                  <li>Java Programming: Solving Problems with Software, 2019</li>
+                </ul>
+            </div>
+      </div>
+    </section>
+
+     <!-- SECTION 3: Experience -->
+     <section id="experience" class="experience-section">
+      <h2>Experience</h2>
+
+      <div class="group">
+        <div class="person-details">
+          <img src="assets/freelance-logo.png">
+          <p>Jan 2016 - Present</p>
+        </div>
+
+        <div class="text">
+          <p>Web Developer</p>
+          <p>Self-Employed/Freelance</p>
+          <ul>
+            <li>Design and develop responsive websites tailored to clients' needs using HTML/CSS, React.js, and WordPress, ensuring seamless user experience across all devices.</li>
+            <li>Developed the official website for the American Statistical Association NJ Chapter (2016).</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="group">
+        <div class="person-details">
+          <img src="assets/bgccci-logo.png">
+          <p>Jul 2021 - Aug 2022</p>
+        </div>
+
+        <div class="text">
+          <p>Research Intern</p>
+          <p>Bronx Community College Geospatial Center of the CUNY CREST Institute</p>
+          <ul>
+            <li>Preprocessed large-scale geospatial imagery data in Google Earth Engine.</li>
+            <li>Created GeoTIFF image files to facilitate data visualization and applied normalized indexes to detect vegetation changes in targeted cities.</li>
+            <li>Optimized raster and vector data formats, significantly reducing processing time and improving analytical efficiency.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="group">
+        <div class="person-details">
+          <img src="assets/wagner-seal.jpg">
+          <p>Jan 2017 - Apr 2017</p>
+        </div>
+
+        <div class="text">
+          <p>Teacher Assistant (Junior Video Game Design)</p>
+          <p>The Department for Lifelong Learning, Wagner College</p>
+          <ul>
+            <li>Mentored 25 middle school students in designing 2D video games using Scratch and Unity.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: Skills -->
+    <section id="skills" class="skills-section">
+      <h2>Skills</h2>
+      <div class="skills-container">
+        <div class="container">
+          <div class="text">
+            Web Development
+          </div>
+          <div class="cells">
+            <div class="cell">
+              <img src="assets/html-logo.webp" alt="html logo">
+              <span>HTML</span>
+            </div>
+            
+            <div class="cell">
+              <img src="assets/css-logo.webp" alt="css logo">
+              <span>CSS</span>
+            </div>
+            
+            <div class="cell">
+              <img src="assets/javascript-logo.webp" alt="javascript logo">
+              <span>JavaScript</span>
+            </div>
+
+            <div class="cell">
+              <img src="assets/wordpress.png" alt="wordpress logo">
+              <span>WordPress</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="container">
+          <div class="text">
+            Full-Stack Development
+          </div>
+          <div class="cells">
+            <div class="cell">
+              <img src="assets/react-logo.webp" alt="react logo">
+              <span>React.js</span>
+            </div>
+
+            <div class="cell">
+              <img src="assets/flask.png" alt="flask logo">
+              <span>Flask</span>
+            </div>
+
+            <div class="cell">
+              <img src="assets/django.svg" alt="django logo">
+              <span>Django</span>
+            </div>
+
+            <div class="cell">
+              <img src="assets/node-logo.webp" alt="node logo">
+              <span>Node.js</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="text">
+            Data Analytics
+          </div>
+          <div class="cells">
+            <div class="cell">
+              <img src="assets/python.png" alt="python logo">
+              <span>Python</span>
+            </div>
+
+            <div class="cell">
+              <img src="assets/sql-logo.png" alt="sql logo">
+              <span>SQL</span>
+            </div>
+
+            <div class="cell">
+              <img src="assets/R.png" alt="r logo">
+              <span>R</span>
+            </div>
+
+            <div class="cell">
+              <img src="assets/tableau.png" alt="tableau logo">
+              <span>Tableau</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="text">
+            Databases
+          </div>
+          <div class="cells">
+            <div class="cell">
+              <img src="assets/mysql.png" alt="mysql logo">
+              <span>MySQL</span>
+            </div>
+
+            <div class="cell">
+              <img src="assets/bigquery.svg" alt="bigquery logo">
+              <span>BigQuery</span>
+            </div>
+
+            <div class="cell">
+              <img src="assets/mongodb.png" alt="mongodb logo">
+              <span>MongoDB</span>
+            </div>
+
+            <div class="cell">
+              <img src="assets/spreadsheet.png" alt="spreadsheet logo">
+              <span>Spreadsheets</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="text">
+              Other
+          </div>
+          <div class="cells">
+            <div class="cell">
+              <img src="assets/c_plus.png" alt="c++ logo">
+              <span>C++</span>
+            </div>
+
+            <div class="cell">
+              <img src="assets/java.webp" alt="java logo">
+              <span>Java</span>
+            </div>
+
+            <div class="cell">
+              <img src="assets/git.png" alt="git logo">
+              <span>Git</span>
+            </div>
+
+            <div class="cell">
+              <img src="assets/figma.png" alt="figma logo">
+              <span>Figma</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+    <!-- SECTION 5: Projects -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <h1 class="subtitle">Projects</h1>
+        <div class="text">
+          Web & Full Stack Development
+        </div>
+        <div class="work-list">
+          <div class="work">
+            <img src="assets/fortune-cookie.png">
+            <div class="layer">
+              <h3>AI Fortune Generator</h3>
+              <p>
+                This playful and entertaining web app generates AI-powered fortunes across 12 unique categories, delivering surprises 
+                like riddles, jokes, fun facts, and compliments. 
+              </p>
+              <a href="https://fortunegeneratorwebapp.vercel.app/" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="assets/pokemon.png">
+            <div class="layer">
+              <h3>Pokémon Recommender</h3>
+              <p>
+                This web app classifies Pokémon accurately using a sophisticated model 
+                and offers strategic battle recommendations tailored to user-selected teams.
+              </p>
+              <a href="https://github.com/vinukranaweera/pokemon-recommender" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="assets/library.png">
+            <div class="layer">
+              <h3>Online Bookstore Platform</h3>
+              <p>
+                A sleek and functional web app that allows users to browse, search, and purchase books while managing 
+                inventory, customer orders, and personalized recommendations.
+              </p>
+              <a href="https://github.com/vinukranaweera/enlightened" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="text">
+          Data Analysis/Science
+        </div>
+        <div class="work-list"> 
+          <div class="work">
+            <img src="assets/loan-default.png">
+            <div class="layer">
+              <h3>Loan Default Predictions</h3>
+              <p>
+                Developed predictive models using financial data to classify loan applicants, 
+                providing accurate insights into potential defaulters while ensuring model interpretability 
+                for fair banking decisions.
+              </p>
+              <a href="https://www.kaggle.com/code/vinukranaweera/loan-default-predictions" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="assets/cyclistic.png">
+            <div class="layer">
+              <h3>Bike Share Case Study</h3>
+              <p>
+                Analyzed Cyclistic bike usage patterns to uncover key differences between casual riders and members, 
+                leading to data-driven marketing strategies that optimize annual membership conversions.
+              </p>
+              <a href="https://www.kaggle.com/code/vinukranaweera/cyclistic-bike-share-case-study" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="assets/customer-prediction.png">
+            <div class="layer">
+              <h3>Potential Customer Predictions</h3>
+              <p>
+                Built machine learning models to identify high-potential leads, analyze conversion factors, 
+                and create customer profiles, helping businesses improve targeting and maximize revenue.
+              </p>
+              <a href="https://www.kaggle.com/code/vinukranaweera/extraalearn-potential-customers-prediction" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+        </div> 
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: Contact -->
+    <section id="contact" class="contact-section">
+      <h2>Contact</h2>
+
+      <div class="group">
+        <div class="text">
+          <h3>
+            Connect with me on social media or send me an email!
+          </h3>
+    
+          <div class="social-links">
+            <div class="email-item">
+              <a href="mailto:vinukranaweera@gmail.com" class="email">
+                <i class="fas fa-envelope"></i>
+              </a>
+              <p>vinukranaweera@gmail.com</p>
+            </div>
+
+            <div class="social-item">
+              <a href="https://www.linkedin.com/in/vinuk-ranaweera-3662a918b/" target="_blank" class="linkedin">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <!-- <p>linkedin.com/in/vinuk-ranaweera-3662a918b</p> -->
+          
+              <a href="https://github.com/vinukranaweera" target="_blank" class="github">
+                <i class="fab fa-github"></i>
+              </a>
+              <!-- <p>github.com/vinukranaweera</p> -->
+          
+              <a href="https://www.kaggle.com/vinukranaweera" target="_blank" class="kaggle">
+                <i class="fab fa-kaggle"></i>
+              </a>
+              <!-- <p>kaggle.com/vinukranaweera</p> -->
+            </div>
+          </div>
+      </div>
+
+        <!-- <form>
+          <label for="name">Name</label>
+          <input type="text" id="name">
+
+          <label for="email">Email</label>
+          <input type="email" id="email">
+
+          <label for="message">Message</label>
+          <textarea id="message" cols="30" rows="10"></textarea>
+
+          <button type="submit">Send Message</button>
+        </form> -->
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </main>
+</body>
+</html>
