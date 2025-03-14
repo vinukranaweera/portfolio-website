@@ -648,7 +648,39 @@ ul li {
 	margin-bottom: 20px;
 }
 
-.projects-section .layer a {
+.project-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.project-buttons a {
+  color: #0756b6;
+  text-decoration: none;
+  font-size: 14px;
+  background: #fff;
+  width: auto; /* Adjust width to fit text */
+  height: 40px;
+  padding: 0 15px; /* Add padding for text */
+  border-radius: 20px; /* Rounded edges */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+  border: 2px solid #0756b6;
+}
+
+.project-buttons a i {
+  margin-right: 5px; /* Space between icon and text */
+}
+
+.project-buttons a:hover {
+  background-color: #0756b6;
+  color: white;
+  transform: scale(1.05);
+}
+/* .projects-section .layer a {
 	margin-top: 20px;
 	color: #0756b6;
 	text-decoration: none;
@@ -662,7 +694,7 @@ ul li {
   align-items: center;
   justify-content: center;
   display: flex;
-}
+} */
 
 .projects-section .layer p {
 	font-size: 12px;
