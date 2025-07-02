@@ -103,10 +103,21 @@
 
         <div class="topBlur2"></div>
         <div class="links">
-          <a href="assets/Vinuk_Resume.pdf" target="_blank" rel="noopener noreferrer">
+          <!-- <a href="assets/Vinuk_Resume.pdf" target="_blank" rel="noopener noreferrer">
             <i class="fa-solid fa-file"></i>
             <span>View Resume</span>
-          </a>
+          </a> -->
+          <div class="links resume-dropdown">
+            <button class="dropdown-toggle" id="resumeToggle">
+              <i class="fa-solid fa-file"></i>
+              <span>View Resume</span>
+              <i class="fa-solid fa-caret-down"></i>
+            </button>
+            <div class="dropdown-menu" id="resumeMenu">
+              <a href="assets/Vinuk_Analyst_Resume.pdf" target="_blank" rel="noopener noreferrer">Analyst</a>
+              <a href="assets/Vinuk_Developer_Resume.pdf" target="_blank" rel="noopener noreferrer">Developer</a>
+            </div>
+          </div>
           
           <a href="https://www.linkedin.com/in/vinuk-ranaweera-3662a918b/" target="_blank" rel="noopener noreferrer">
             <i class="fa-brands fa-linkedin"></i>
@@ -143,6 +154,8 @@
         <div class="details">
             <div class="education">
                 <h3><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+                <p><strong>Master's Degree in Computer Engineering (In Progress)</strong><br>New York University (NYU) Tandon School of Engineering, May 2027</p>
+                <br>
                 <p><strong>Bachelor's Degree in Computer Science</strong><br>Grove School of Engineering, The City College of New York (CUNY), Dec 2023</p>
                 <ul>
                   <li><strong>Honors</strong>: Cum Laude, Dean's List Academic Achievement Award</li>
@@ -156,6 +169,7 @@
                 <ul>
                   <p><strong>MIT Professional Education</strong></p>
                   <li>Applied Data Science Program: Leveraging AI for Effective Decision-Making, 2024</li>
+                  <br>
                   <p><strong>Coursera</strong></p>
                   <li>Google Data Analytics Professional Certificate, 2023</li>
                   <li>Java Programming: Arrays, Lists, and Structured Data, 2019</li>

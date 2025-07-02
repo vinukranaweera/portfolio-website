@@ -41,3 +41,20 @@ function typeEffect() {
 document.addEventListener("DOMContentLoaded", () => {
     setTimeout(typeEffect, 500);
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const toggle = document.getElementById('resumeToggle');
+    const menu = document.getElementById('resumeMenu');
+
+    toggle.addEventListener('click', function (e) {
+      e.stopPropagation(); // Prevent clicks from bubbling up
+      menu.classList.toggle('show');
+    });
+
+    // Close dropdown when clicking outside
+    document.addEventListener('click', function (e) {
+      if (!toggle.contains(e.target) && !menu.contains(e.target)) {
+        menu.classList.remove('show');
+      }
+    });
+  });
