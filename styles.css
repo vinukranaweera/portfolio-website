@@ -321,6 +321,8 @@ ul li {
 
 .hero-section .headshot img {
   width: 350px;
+  /* height: 350px;
+  object-fit: cover; */
   border-radius: 50%;
   /* box-shadow: 0 0 25px var(--link-color); */
   box-shadow: 0 0 25px rgba(200, 220, 255, 0.7);
@@ -930,6 +932,7 @@ ul li {
 
   .hero-section .headshot {
     width: 325px;
+    /* height: 325px; */
   }
 
   #text {
@@ -1055,6 +1058,7 @@ ul li {
 
   .hero-section .headshot img {
     width: 300px;
+    /* height: 300px; */
   }
 
   .hero-section .text h3 {
@@ -1178,6 +1182,7 @@ ul li {
 
   .hero-section .headshot img {
     width: 250px;
+    /* height: 250px; */
   }
 
   /* SECTION 4: Skills */
