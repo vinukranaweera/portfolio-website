@@ -681,14 +681,19 @@ ul li {
 }
 
 .projects-section .work {
+  width: 350px;
+	height: 250px;
 	border-radius: 10px;
 	position: relative;
 	overflow: hidden;
+	flex-shrink: 0;
 }
 
 .projects-section .work img {
 	width: 100%;
-  height: 250px;
+  object-fit: cover;
+  /* height: 250px; */
+	height: 100%;
 	border-radius: 10px;
 	display: block;
 	transition: transform 0.5s;
